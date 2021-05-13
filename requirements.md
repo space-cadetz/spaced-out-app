@@ -46,9 +46,9 @@ Notifications of cool intergalactic happenings.
 3. A user can search for an image at random from the NASA api.
 4. A user can view a calendar to pick a day of thier choosing to view it's respective image and details.
 
-### Data Flow [>insert< Entity relationship diagram]
+### Data Flow 
 
-Describe the flow of data in your application. Write out what happens from the time the user begins using the app to the time the user is done with the app. Think about the “Happy Path” of the application. Describe through visuals and text what requests are made, and what data is processed, in addition to any other details about how the user moves through the site.
+![](https://github.com/space-cadetz/spaced-out-app/blob/main/resources/entity-relationship-diagram.PNG?raw=true)
 
 ## Non-Functional Requirements
 
