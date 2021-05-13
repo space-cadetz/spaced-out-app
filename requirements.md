@@ -54,9 +54,5 @@ Describe the flow of data in your application. Write out what happens from the t
 
 Non-functional requirements are requirements that are not directly related to the functionality of the application but still important to the app.
 
-Examples include:
-
-1. This application will not be built with high levels of Security in mind.
-2. Usability
-3. Testability
-4. etc….
+1. Performance & Scalability - We're aiming to create a fast response (not more than 1 sec) using componentized code base to allow for easy future expansion to include other NASA API's
+2. Usability - To increase user adoption our app will present the user with a simple an clear interface by using pleasant colors, easy to read Font sizes, and useful directions/descriptions
