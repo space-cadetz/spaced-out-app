@@ -1,6 +1,22 @@
 # 🚀 spaced-out-app
 
-**Authors**:
+
+<div align="center">
+<a>Space Cadets</a>
+<br>
+<a href="https://github.com/Edward-Regalado">Edward-Regalado</a>
+<br>
+<a href="https://github.com/Mmarcos01">Marie Marcos</a>
+<br>
+<a href="https://github.com/santorsm">Matt Santorsola</a>
+<br>
+<a href="https://github.com/AL0YSI0US">Aloysious</a>
+<br>
+</div>
+
+
+
+
 
 **Version**: 0.0.0
 
@@ -9,6 +25,15 @@
 ## Overview
 
 <!-- Provide a high level overview of what this application is and why you are building it, beyond the fact that it's an assignment for this class. (i.e. What's your problem domain?) -->
+
+
+>  D O M A I N . M O D E L
+
+![](https://github.com/space-cadetz/spaced-out-app/blob/main/resources/domain-model.PNG?raw=true)
+
+> W I R E F R A M E S
+
+![](https://github.com/space-cadetz/spaced-out-app/blob/main/resources/wireframes.PNG?raw=true)
 
 ## Getting Started
 
@@ -25,7 +50,7 @@
 
 **Languages :** JavaScript | HTML | CSS | Markdown
 
-**Libraries :**  React / Bootstrap
+**Libraries :**  React / Bootstrap | Axios | NASA
 
 **Tools :** Trello | Github | VS Code / Netlify
 
@@ -38,5 +63,10 @@
 -->
 
 ## Resources
+
++ [react-bootstrap](https://react-bootstrap.github.io/layout/grid/)
++ [NASA API's](https://api.nasa.gov/)
++ [Github - NASA apod-api](https://github.com/nasa/apod-api)
+
 
 <h2 align="center">❤️ Credit and Collaborations 👥</h2>
