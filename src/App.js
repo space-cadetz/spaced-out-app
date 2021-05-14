@@ -1,45 +1,31 @@
 import React from 'react';
-import axios from 'axios';
-import './App.css';
+import Home from './components/Home';
+import Nav from './components/NavBar';
+import Gallery from './components/Gallery';
+import Profile from './components/Profile';
+import About from './components/About';
+import Calender from './components/Calender';
+import NasaPhoto from './components/NasaPhoto';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Container from 'react-bootstrap/Container';
+import './styles/App.css';
 
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      title: '',
-      fetchedData: false
-    };
-  }
-
-  // Nasa APOD query example:
-  // https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY
-  // https://api.nasa.gov/
-
-  fetchData = async () => {
-    console.log('fetching data');
-    let apodData = await axios.get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY');
-    console.log('apod data:', apodData);
-    let pod = apodData.data;
-    console.log('pic of the day:', pod);
-    this.setState({
-      title: apodData.data.title,
-      fetchedData: true
-    });
-  }
-
-  render() {
-    return (<>
-      <h1 onClick={this.fetchData}>NASA APOD!</h1>
-      { this.state.fetchedData ?
-        (<>
-          <h2>{this.state.title}</h2>
-        </>)
-        : ''}
-
-    </>
-    );
-  }
+function App() {
+  return (
+    <Router>
+      <Container className="App">
+        <Nav />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/picture" component={NasaPhoto} />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/profile" component={Profile} />
+          <Route exact path="/gallery" component={Gallery} />
+          <Route exact path="/calender" component={Calender} />
+        </Switch>
+      </Container>
+    </Router>
+  );
 }
 
 

@@ -1,0 +1,14 @@
+.home-container {
+  margin-top: 50px;
+  border-radius: 10px;
+}
+
+.home-container img {
+  margin: 10px;
+  border-radius: 10px;
+  size: 200px;
+}
+
+.img {
+  size: 200px;
+}
