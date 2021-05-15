@@ -2,6 +2,7 @@
 # https://dev.to/rajeshroyal/page-not-found-error-on-netlify-reactjs-react-router-solved-43oa
 
 # Redirects from what the browser requests to what we serve
+
 /* /index.html 200
 
 # /home /https://zen-varahamihira-8a9600.netlify.app/home 200
