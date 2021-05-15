@@ -1,12 +1,12 @@
 import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
-// import {useAuth0} from '@auth0/auth0-react';
 import { withAuth0 } from '@auth0/auth0-react';
 import LogoutButton from './LogoutButton';
 import '../styles/Nav.css';
 
 class Navigation extends React.Component {
   render() {
+    const { isAuthenticated } = this.props.auth0;
     return (
       <>
         <div className="nav-container">
@@ -32,7 +32,7 @@ class Navigation extends React.Component {
                 <Nav.Link className="links" href='/about'>About</Nav.Link>
               </Nav.Item>
               <Nav.Item as="li">
-                <LogoutButton />
+                {isAuthenticated ? <LogoutButton /> : ''}
               </Nav.Item>
             </Nav>
           </Navbar>
