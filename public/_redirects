@@ -2,12 +2,11 @@
 # https://dev.to/rajeshroyal/page-not-found-error-on-netlify-reactjs-react-router-solved-43oa
 
 # Redirects from what the browser requests to what we serve
-
 /* /index.html 200
 
-# /home /https://zen-varahamihira-8a9600.netlify.app/home 200
-# /picture /https://zen-varahamihira-8a9600.netlify.app/picture  
-# /gallery /https://zen-varahamihira-8a9600.netlify.app/gallery
-# /profile /https://zen-varahamihira-8a9600.netlify.app/profile 
-# /calendar /https://zen-varahamihira-8a9600.netlify.app/calendar
-# /about /https://zen-varahamihira-8a9600.netlify.app/about
+# / / 200
+# /picture /picture  
+# /gallery /gallery
+# /profile /profile 
+# /calendar /calendar
+# /about /about
