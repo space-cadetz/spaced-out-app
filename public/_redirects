@@ -1,0 +1,12 @@
+# Assisted by TA Joe 
+# https://dev.to/rajeshroyal/page-not-found-error-on-netlify-reactjs-react-router-solved-43oa
+
+# Redirects from what the browser requests to what we serve
+/* /index.html 200
+
+# / / 200
+# /picture /picture  
+# /gallery /gallery
+# /profile /profile 
+# /calendar /calendar
+# /about /about
