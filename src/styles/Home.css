@@ -1,0 +1,17 @@
+.home-container {
+  margin-top: 50px;
+  border-radius: 10px;
+}
+
+.home-container img {
+  margin: 10px;
+  border-radius: 10px;
+  size: 200px;
+}
+
+.img {
+  size: 200px;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}

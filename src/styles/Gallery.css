@@ -1,0 +1,10 @@
+.gallery-container {
+  margin-top: 50px;
+  border-radius: 10px;
+}
+
+.gallery-constainer img {
+  margin: 10px;
+  border-radius: 10px;
+  size: 200px;
+}
