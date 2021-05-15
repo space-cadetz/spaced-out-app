@@ -1,0 +1,17 @@
+.nasa-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.nasa-container img {
+  width: 80%;
+  border-radius: 10px;
+}
+
+
+/* .photo-title {} */
+/* .photo-date {} */
+/* .photo-explaination {} */
