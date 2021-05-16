@@ -6,8 +6,8 @@ import About from './components/About';
 import Calender from './components/Calender';
 import NasaPhoto from './components/NasaPhoto';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Container from 'react-bootstrap/Container';
-import './styles/App.css';
+// import Container from 'react-bootstrap/Container';
+// import './styles/App.css';
 
 // Components created by { auth0 } : https://auth0.com/docs/quickstart/spa/react
 // https://auth0.com/docs/quickstart/spa/react#configure-the-auth0provider-component
@@ -27,21 +27,21 @@ class App extends React.Component {
       <>
         <Router>
           <IsLoadingAndError>
-            <Container className="App">
-              <Nav />
-              <Switch>
-                <Route exact path="/">
-                  {isAuthenticated ? <Home /> : <Login />}
-                </Route>
-                <Route exact path="/picture" component={NasaPhoto} />
-                <Route exact path="/about" component={About} />
-                <Route exact path="/profile">
-                  {isAuthenticated ? <Profile userInfo={user} /> : ''}
-                </Route>
-                <Route exact path="/gallery" component={Gallery} />
-                <Route exact path="/calender" component={Calender} />
-              </Switch>
-            </Container>
+            {/* <Container className="App"> */}
+            <Nav />
+            <Switch>
+              <Route exact path="/">
+                {isAuthenticated ? <Home /> : <Login />}
+              </Route>
+              <Route exact path="/picture" component={NasaPhoto} />
+              <Route exact path="/about" component={About} />
+              <Route exact path="/profile">
+                {isAuthenticated ? <Profile userInfo={user} /> : ''}
+              </Route>
+              <Route exact path="/gallery" component={Gallery} />
+              <Route exact path="/calender" component={Calender} />
+            </Switch>
+            {/* </Container> */}
           </IsLoadingAndError>
         </Router>
       </>

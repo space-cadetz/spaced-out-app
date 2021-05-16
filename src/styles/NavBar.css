@@ -1,4 +1,21 @@
 .navbar {
+  background: rgb(32, 32, 32);
+  /* background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%); */
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.logo {
+  font-family: 'PT Sans', sans-serif;
+}
+
+/* .navbar {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -30,4 +47,4 @@
   font-weight: bolder;
   font-size: 70px;
   text-shadow: 4px 4px 2px rgba(90, 89, 89, 0.541);
-}
+} */
