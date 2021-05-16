@@ -9,6 +9,7 @@ import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '../styles/Profile.css';
 
 const Profile = () => {
   const { user, isAuthenticated, isLoading } = useAuth0();
@@ -17,26 +18,44 @@ const Profile = () => {
   }
   return (
     isAuthenticated && (
-      <div>
-        <Container>
+      <div class='profile-background'>
+        <Container className='profile-container'>
           <div class="text-center">
-            <Image src={user.picture} alt={user.name} title="profile picture" roundedCircle id="profilePic" />
+            <Image className='profile-img' src={user.picture} alt={user.name} title="profile picture" roundedCircle id="profilePic" />
           </div>
           <h2 class="text-center">{user.name}</h2>
           <p class="text-center">{user.email}</p>
+          <br />
+          <br />
+          <br />
+          <div class="text-center">Ta-Da!!!!!!!!!!!!!!!</div><br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <div class="text-center">Placeholder text</div><br />
         </Container>
-        <br />
-        <br />
-        <br />
-        <div class="text-center">Ta-Da!!!!!!!!!!!!!!!</div><br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <div class="text-center">Placeholder text</div><br />
       </div>
     )
   );
 };
 export default Profile;
+
+{/* <>
+<section className='profile-card'>
+  <Card style={{ width: '18rem' }}>
+    <div className='profile-img'>
+      <Card.Img className='img' src={user.picture} />
+    </div>
+    <Card.Body className='profile-body'>
+      <Card.Title>{user.name}</Card.Title>
+      <h6 cy-data='user-email'>{user.email}</h6>
+    </Card.Body>
+  </Card>
+</section>
+</>
+)
+);
+};
+export default Profile; */}
 

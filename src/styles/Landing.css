@@ -3,9 +3,6 @@ html {
 }
 
 .landing-container {
-  /* background: url('/images/img-home.jpg') center center/cover no-repeat; */
-  /* height: 100vh;
-  width: 100%; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -20,15 +17,15 @@ img {
 }
 
 .landing-container > h1 {
-  color: #fff;
+  color: rgb(255, 255, 255);
   font-size: 4vw;
   margin-top: -550px;
   font-family: 'PT Sans', sans-serif;
 }
 
 .landing-container > p {
-  margin-top: 8px;
-  color: #fff;
+  margin-top: 10px;
+  color: rgb(255, 255, 255);
   font-size: 1.25vw;
   font-family: 'Trebuchet MS',
 }
