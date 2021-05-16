@@ -1,9 +1,9 @@
 import React from 'react';
 import Home from './components/Home';
 import Nav from './components/NavBar';
-import Gallery from './components/Gallery';
+import Mars from './components/Mars';
 import About from './components/About';
-import Calender from './components/Calender';
+import Search from './components/Search';
 import NasaPhoto from './components/NasaPhoto';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 // import Container from 'react-bootstrap/Container';
@@ -38,8 +38,8 @@ class App extends React.Component {
               <Route exact path="/profile">
                 {isAuthenticated ? <Profile userInfo={user} /> : ''}
               </Route>
-              <Route exact path="/gallery" component={Gallery} />
-              <Route exact path="/calender" component={Calender} />
+              <Route exact path="/mars" component={Mars} />
+              <Route exact path="/search" component={Search} />
             </Switch>
             {/* </Container> */}
           </IsLoadingAndError>
