@@ -2,7 +2,7 @@ html {
   background-color: rgb(20, 20, 20);
 }
 
-.hero-container {
+.landing-container {
   /* background: url('/images/img-home.jpg') center center/cover no-repeat; */
   /* height: 100vh;
   width: 100%; */
@@ -19,45 +19,16 @@ img {
   height: 100vh;
 }
 
-.hero-container > h1 {
+.landing-container > h1 {
   color: #fff;
   font-size: 4vw;
   margin-top: -550px;
   font-family: 'PT Sans', sans-serif;
 }
 
-.hero-container > p {
+.landing-container > p {
   margin-top: 8px;
   color: #fff;
   font-size: 1.25vw;
   font-family: 'Trebuchet MS',
 }
-
-/* .hero-btns {
-  margin-top: 32px;
-}
-
-.hero-btns .btn {
-  margin: 6px;
-}
-
-.fa-play-circle {
-  margin-left: 4px;
-} */
-
-/* @media screen and (max-width: 960px) {
-  .hero-container > h1 {
-    font-size: 70px;
-    margin-top: -50px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .hero-container > h1 {
-    font-size: 50px;
-    margin-top: -50px;
-  }
-
-  .hero-container > p {
-    font-size: 30px;
-  } */

@@ -22,14 +22,14 @@
   min-height: 10vh;
   background-color: white;
   margin-top: 12px;
-}
+} */
 
 .navbar-logo {
   font-size: 3rem;
   font-family: monospace;
 }
 
-.links {
+/* .links {
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   text-transform: uppercase;
   padding: 20px;

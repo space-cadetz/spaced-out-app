@@ -7,7 +7,8 @@
 }
 
 .nasa-container img {
-  width: 80%;
+  width: 50vw;
+  height: 50vh;
   border-radius: 10px;
 }
 

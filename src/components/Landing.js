@@ -7,7 +7,7 @@ import '../styles/Landing.css';
 
 function Landing() {
   return (
-    <div className='hero-container'>
+    <div className='landing-container'>
       <Image src={Photo} alt='planet' fluid />
       <h1>SpaceOut and Explore the Galaxy</h1>
       <p>We got all your space in one place</p>
