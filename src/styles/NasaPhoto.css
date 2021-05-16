@@ -1,14 +1,19 @@
+
+
 .nasa-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  padding-top: 20px;
+  background-color: rgb(8, 8, 8);
+  color: white;
 }
 
 .nasa-container img {
-  width: 80%;
+  width: 40vw;
   border-radius: 10px;
+
 }
 
 

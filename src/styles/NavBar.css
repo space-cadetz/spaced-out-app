@@ -1,18 +1,36 @@
 .navbar {
+  background: rgb(32, 32, 32);
+  height: 80px;
+  /* display: flex; */
+  /* justify-content: center;
+  align-items: center; */
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.logo {
+  font-family: 'PT Sans', sans-serif;
+}
+
+/* .logout-btn {} */
+
+/* .navbar {
   display: flex;
   justify-content: space-around;
   align-items: center;
   min-height: 10vh;
   background-color: white;
   margin-top: 12px;
-}
-
+} */
+/* 
 .navbar-logo {
   font-size: 3rem;
   font-family: monospace;
-}
+} */
 
-.links {
+/* .links {
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   text-transform: uppercase;
   padding: 20px;
@@ -30,4 +48,4 @@
   font-weight: bolder;
   font-size: 70px;
   text-shadow: 4px 4px 2px rgba(90, 89, 89, 0.541);
-}
+} */

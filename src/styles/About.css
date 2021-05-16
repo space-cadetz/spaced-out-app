@@ -1,12 +1,14 @@
 .about-container {
+  background-color: rgb(20, 20, 20);
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 300px;
+  padding-top: 300px;
 }
 
 .card {
   margin: 10px;
+  height: 30vh;
 }
 
 .card-body{

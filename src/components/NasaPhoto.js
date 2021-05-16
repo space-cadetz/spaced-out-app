@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
+import {Image} from 'react-bootstrap';
 import '../styles/NasaPhoto.css';
 
 const apiKey = process.env.REACT_APP_NASA_KEY;
@@ -24,8 +25,8 @@ export default function NasaPhoto() {
 
   return (
     <div className="nasa-container">
-      <img src={photoData.url} alt={photoData.title} />
       <h1 id="photo-title">{photoData.title}</h1>
+      <Image src={photoData.url} alt={photoData.title} fluid/>
       <p id="photo-date">{photoData.date}</p>
       <p id="photo-explaination">{photoData.explanation}</p>
     </div>
