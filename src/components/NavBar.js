@@ -14,8 +14,8 @@ class Navigation extends React.Component {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
-            {/* <Nav.Link href='/picture'>Nasa Photo</Nav.Link> */}
-            {/* <Nav.Link href='/profile'>Profile</Nav.Link> */}
+            <Nav.Link href='/picture'>Nasa Photo</Nav.Link>
+            <Nav.Link href='/profile'>Profile</Nav.Link>
             <NavDropdown title="Explore" id="collasible-nav-dropdown">
               <NavDropdown.Item href='/picture'>Nasa Photo</NavDropdown.Item>
               <NavDropdown.Item href='/mars'>Mars</NavDropdown.Item>
@@ -32,9 +32,6 @@ class Navigation extends React.Component {
           </Nav>
         </Navbar.Collapse>
       </Navbar>
-
-
-
     );
   }
 }

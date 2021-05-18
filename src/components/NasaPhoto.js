@@ -26,7 +26,7 @@ export default function NasaPhoto() {
   return (
     <div className="nasa-container">
       <h1 id="photo-title">{photoData.title}</h1>
-      <Image src={photoData.url} alt={photoData.title} fluid/>
+      <Image src={photoData.url} alt={photoData.title} fluid />
       <p id="photo-date">{photoData.date}</p>
       <p id="photo-explaination">{photoData.explanation}</p>
     </div>

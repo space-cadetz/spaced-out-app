@@ -30,6 +30,7 @@
 ![](https://github.com/space-cadetz/spaced-out-app/blob/main/resources/wireframes.PNG?raw=true)
 
 ## Getting Started
+
 <!-- What are the steps that a user must take in order to build this app on their own machine and get it running? -->
 
 1. clone repo
@@ -54,16 +55,17 @@ npm install Auth0 axios dotenv react-bootstrap bootstrap
 <!-- What are the steps that a user must take in order to build this app on their own machine and get it running? -->
 
 ## Architecture
+
 <!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
 
 **Languages :** JavaScript | HTML | CSS | Markdown
 
-**Libraries :**  React / Bootstrap | Axios | NASA | Auth0 | dotenv
+**Libraries :**  React / Bootstrap | Axios | NASA | Auth0 | dotenv | Font Awesome
 
 **Tools :** Trello | Github | VS Code / Netlify
 
-
 ## Change Log
+
 <!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
 01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. 
 -->
@@ -80,24 +82,27 @@ npm install Auth0 axios dotenv react-bootstrap bootstrap
 + [NASA API's](https://api.nasa.gov/)
 + [Github - NASA apod-api](https://github.com/nasa/apod-api)
 + { `Megrim` } - [Google fonts](https://fonts.google.com/specimen/Megrim#standard-styles)
++ { `Roboto Mono` } - [Google fonts](https://fonts.google.com/specimen/Roboto+Mono)
 + [{ `Simple React.js User Login Authentication | Auth0` }](https://www.youtube.com/watch?v=MqczHS3Z2bc) Youtube tutorial on Auth0 wizardry.
 + [CSS Shadow Generator](https://cssgenerator.org/box-shadow-css-generator.html)
-+ [auth0 docs](https://auth0.com/docs/libraries/auth0-react)
++ [Auth0 docs](https://auth0.com/docs/libraries/auth0-react)
 + [card-columns-props - react-bootstrap](https://react-bootstrap.github.io/components/cards/#card-columns-props)
 + [React Bootstrap Flipping Cards](https://mdbootstrap.com/plugins/react/flipping-cards/)
 + [React Website Tutorial](https://www.youtube.com/watch?v=I2UBjN5ER4s) - { `Brian Design - Youtube` }
++ [clippy](https://bennettfeely.com/clippy/) - photo editing tool
++ [Font Awesome](https://fontawesome.com/) - vector icons and social logos
 
 <h2 align="center">❤️ Credit and Collaborations 👥</h2>
 
-+ Props to { `Brian Design - *Youtuber*` } 
-+  + [Brian's react website resources](https://github.com/briancodex/react-website-v1)
++ Props to { `Brian Design - *Youtuber*` }
++ + [Brian's react website resources](https://github.com/briancodex/react-website-v1)
 + Props to { `TA Chris` } for helping us with our Auth0 and Netlify `.env` variables.
 + Props to { `TA Joe` } for assisting us with configuring our routes on Netlify.
-+ [Netlify routing redirects docs](https://docs.netlify.com/routing/redirects/) 
-+  + [redirect-rules-for-all](https://www.netlify.com/blog/2019/01/16/redirect-rules-for-all-how-to-configure-redirects-for-your-static-site/) -*specific to our situation* 
++ [Netlify routing redirects docs](https://docs.netlify.com/routing/redirects/)
++ + [redirect-rules-for-all](https://www.netlify.com/blog/2019/01/16/redirect-rules-for-all-how-to-configure-redirects-for-your-static-site/) -*specific to our situation*
 
-> Without an explicit redirect, the Netlify bots assume you’re requesting a page separate 
-> from /index.html and since that page doesn’t actually exist, it returns an error. 
+> Without an explicit redirect, the Netlify bots assume you’re requesting a page separate
+> from /index.html and since that page doesn’t actually exist, it returns an error.
 
 To enable clean URLs in your Netlify deployed SPAs, add the following rule to your `_redirects` file:
 

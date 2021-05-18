@@ -28,12 +28,12 @@ const Profile = () => {
           <br />
           <br />
           <br />
-          <div class="text-center">Ta-Da!!!!!!!!!!!!!!!</div><br />
+          <div class="text-center"></div><br />
           <br />
           <br />
           <br />
           <br />
-          <div class="text-center">Placeholder text</div><br />
+          <div class="text-center">🛸There are no passengers on spaceship earth...🌎 </div><br />
         </Container>
       </div>
     )
