@@ -1,0 +1,31 @@
+html {
+  background-color: rgb(20, 20, 20);
+}
+
+.landing-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+  object-fit: contain;
+}
+
+img {
+  width: 100vw;
+  height: 100vh;
+}
+
+.landing-container > h1 {
+  color: rgb(255, 255, 255);
+  font-size: 4vw;
+  margin-top: -550px;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.landing-container > p {
+  margin-top: 10px;
+  color: rgb(255, 255, 255);
+  font-size: 1.25vw;
+  font-family: 'Trebuchet MS',
+}

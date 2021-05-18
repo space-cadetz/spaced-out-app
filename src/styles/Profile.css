@@ -1,0 +1,30 @@
+.profile-background {
+ background-color: rgb(20, 20, 20);
+}
+
+.profile-container {
+  padding-top: 40px;
+  background-color: rgba(20, 20, 20, 0.877);
+}
+
+.profile-img{
+  height: 100px;
+  width: 100px;
+  margin-bottom: 50px;
+  margin-top: 60px;
+}
+
+/* N A M E  */
+h2.text-center {
+color: aliceblue;
+}
+/* E M A I L */
+p.text-center {
+  color: aliceblue;
+  font-size: 20px;
+}
+/* 🛸There are no passengers on spaceship earth...🌎 */
+div.text-center {
+  color: aliceblue;
+  font-size: 26px;
+}
