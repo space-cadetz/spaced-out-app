@@ -19,21 +19,21 @@ const Profile = () => {
     isAuthenticated && (
       <div>
         <Container>
-          <div class="text-center">
+          <div className="text-center">
             <Image src={user.picture} alt={user.name} title="profile picture" roundedCircle id="profilePic" />
           </div>
-          <h2 class="text-center">{user.name}</h2>
-          <p class="text-center">{user.email}</p>
+          <h2 className="text-center">{user.name}</h2>
+          <p className="text-center">{user.email}</p>
         </Container>
         <br />
         <br />
         <br />
-        <div class="text-center">Ta-Da!!!!!!!!!!!!!!!</div><br />
+        <div className="text-center">Ta-Da!!!!!!!!!!!!!!!</div><br />
         <br />
         <br />
         <br />
         <br />
-        <div class="text-center">Placeholder text</div><br />
+        <div className="text-center">Placeholder text</div><br />
       </div>
     )
   );
