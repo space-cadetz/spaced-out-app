@@ -2,6 +2,7 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useAuth0 } from '@auth0/auth0-react';
+import {Button} from 'react-bootstrap';
 
 import '../styles/NasaPhoto.css';
 
@@ -15,11 +16,12 @@ export default function NasaPhoto() {
   console.log(auth);
 
   const handleClick = () => {
+    console.log('email', auth.user.email);
     console.log('image title:', photoData.title);
     console.log('image date', photoData.date);
     console.log('image url', photoData.url);
 
-    axios.post('http://localhost:3001/insert', {
+    axios.post('http://localhost:3001/user', {
       email: auth.user.email,
       title: photoData.title,
       date: photoData.date,
@@ -48,9 +50,8 @@ export default function NasaPhoto() {
       <img src={photoData.url} alt={photoData.title} />
       <h1 name="title" id="photo-title">{photoData.title}</h1>
       <p name="date" id="photo-date">{photoData.date}</p>
-      <p name="explaination" id="photo-explaination">{photoData.explanation}</p>
-      <p name="url" id="photo-url">{photoData.url}</p>
-      <button onClick={handleClick}></button>
+      <p name="explanation" id="photo-explanation">{photoData.explanation}</p>
+      <Button variant="success" onClick={handleClick}>Save to Favorites</Button>
 
     </div>
   );
