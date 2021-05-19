@@ -18,7 +18,7 @@ class Navigation extends React.Component {
             <Nav.Link href='/profile'>Profile</Nav.Link>
             <NavDropdown title="Explore" id="collasible-nav-dropdown">
               <NavDropdown.Item href='/picture'>Nasa Photo</NavDropdown.Item>
-              <NavDropdown.Item href='/mars'>Mars</NavDropdown.Item>
+              <NavDropdown.Item href='/documentaries'>Documentaries</NavDropdown.Item>
               <NavDropdown.Item href='/search'>Search</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href='/profile'>Profile</NavDropdown.Item>

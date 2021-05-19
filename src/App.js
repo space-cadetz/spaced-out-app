@@ -1,7 +1,7 @@
 import React from 'react';
 import Home from './components/Home';
 import Nav from './components/NavBar';
-import Mars from './components/Mars';
+import Docs from './components/Documentaries';
 import About from './components/About';
 import Search from './components/Search';
 import NasaPhoto from './components/NasaPhoto';
@@ -38,9 +38,10 @@ class App extends React.Component {
               <Route exact path="/profile">
                 {isAuthenticated ? <Profile userInfo={user} /> : ''}
               </Route>
-              <Route exact path="/mars" component={Mars} />
+              <Route exact path="/documentaries" component={Docs} />
               <Route exact path="/search" component={Search} />
             </Switch>
+            {/* <NasaPhoto /> */}
             {/* </Container> */}
           </IsLoadingAndError>
         </Router>
