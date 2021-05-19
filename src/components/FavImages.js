@@ -1,9 +1,9 @@
 import React from 'react';
 import axios from 'axios';
 import { withAuth0 } from '@auth0/auth0-react';
-import { Carousel, CardDeck, Card, Button, Container } from 'react-bootstrap';
+import { CardDeck, Card, Button, Container } from 'react-bootstrap';
 
-import '../styles/FavImages.css'
+import '../styles/FavImages.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 class FavImages extends React.Component {
@@ -14,23 +14,23 @@ class FavImages extends React.Component {
       errors: '',
       images: [],
       email: this.props.auth0.user.email,
-    }
+    };
   }
 
   handleDelete = async (id) => {
-    try{
+    try {
       let imageData = await axios.delete(
-      `http://localhost:3001/user/${id}?userEmail=${this.state.email}`
-    );
-    this.setState({
-      images: imageData.data
-    });
-  } catch (err) {
-    this.setState({
-      errors: err.toString(),
-    });
-  }
-};
+        `http://localhost:3001/user/${id}?userEmail=${this.state.email}`,
+      );
+      this.setState({
+        images: imageData.data
+      });
+    } catch (err) {
+      this.setState({
+        errors: err.toString(),
+      });
+    }
+  };
 
   componentDidMount = async () => {
     try {
@@ -58,7 +58,7 @@ class FavImages extends React.Component {
           {/* <Card.Title>{image.title}</Card.Title> */}
           <h3>{image.title}</h3>
           <p>{image.date}</p>
-          <Button  onClick={() => this.handleDelete(image._id)}>Delete</Button>
+          <Button onClick={() => this.handleDelete(image._id)}>Delete</Button>
         </Card.Body>
       </CardDeck>
     ));
