@@ -1,4 +1,5 @@
 import React from 'react';
+import FavImages from './FavImages';
 // Component created by { auth0 } : https://auth0.com/docs/quickstart/spa/react
 // https://auth0.com/docs/quickstart/spa/react#configure-the-auth0provider-component
 
@@ -25,37 +26,15 @@ const Profile = () => {
           </div>
           <h2 class="text-center">{user.name}</h2>
           <p class="text-center">{user.email}</p>
-          <br />
-          <br />
-          <br />
-          <div class="text-center"></div><br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <div class="text-center">🛸There are no passengers on spaceship earth...🌎 </div><br />
+          <div class="text-center"></div>
+          <div class="quote">🛸There are no passengers on spaceship earth...🌎 </div><br />
         </Container>
+        <div>
+          <FavImages />
+        </div>
       </div>
     )
   );
 };
 export default Profile;
-
-{/* <>
-<section className='profile-card'>
-  <Card style={{ width: '18rem' }}>
-    <div className='profile-img'>
-      <Card.Img className='img' src={user.picture} />
-    </div>
-    <Card.Body className='profile-body'>
-      <Card.Title>{user.name}</Card.Title>
-      <h6 cy-data='user-email'>{user.email}</h6>
-    </Card.Body>
-  </Card>
-</section>
-</>
-)
-);
-};
-export default Profile; */}
 

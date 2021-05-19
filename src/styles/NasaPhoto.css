@@ -1,5 +1,9 @@
-
-
+.jumbo {
+  width: 50vw;
+}
+.apod-img {
+  border: 2px solid red;
+}
 .nasa-container {
   display: flex;
   flex-direction: column;
