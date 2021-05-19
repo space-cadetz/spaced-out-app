@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import { withAuth0 } from '@auth0/auth0-react';
-import { Carousel, CardDeck, Card, Button, Container } from 'react-bootstrap';
+import { CardDeck, Card, Button, Container } from 'react-bootstrap';
 
 import '../styles/FavImages.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -54,7 +54,7 @@ class FavImages extends React.Component {
     let allImages = this.state.images.map((image) => (
       <CardDeck key={image._id}>
         <Card.Body>
-          <img class="fav-img" src={image.url} alt={image.title} />
+          <img className="fav-img" src={image.url} alt={image.title} />
           {/* <Card.Title>{image.title}</Card.Title> */}
           <h3>{image.title}</h3>
           <p>{image.date}</p>

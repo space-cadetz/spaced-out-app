@@ -19,15 +19,15 @@ const Profile = () => {
   }
   return (
     isAuthenticated && (
-      <div class='profile-background'>
+      <div className='profile-background'>
         <Container className='profile-container'>
-          <div class="text-center">
+          <div className="text-center">
             <Image className='profile-img' src={user.picture} alt={user.name} title="profile picture" roundedCircle id="profilePic" />
           </div>
-          <h2 class="text-center">{user.name}</h2>
-          <p class="text-center">{user.email}</p>
-          <div class="text-center"></div>
-          <div class="quote">🛸There are no passengers on spaceship earth...🌎 </div><br />
+          <h2 className="text-center">{user.name}</h2>
+          <p className="text-center">{user.email}</p>
+          <div className="text-center"></div>
+          <div className="quote">🛸There are no passengers on spaceship earth...🌎 </div><br />
         </Container>
         <div>
           <FavImages />
