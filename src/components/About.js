@@ -2,6 +2,9 @@ import React from 'react';
 // import { Card, Button, Container } from 'react-bootstrap';
 import BGPhoto from '../images/about-bg-image.jpg';
 import Tony from '../images/tony.jpg';
+import Aloysious from '../images/aloysious.png';
+import Marie from '../images/marie.jpg';
+import Matt from '../images/matt.jpg';
 import '../styles/About.css';
 
 function AboutUs() {
@@ -15,18 +18,31 @@ function AboutUs() {
               Meet The Team
             <i className="fas fa-user-astronaut"></i>
           </h1>
-
         </div>
         <div className="card-container">
           <div className="card">
             <img src={BGPhoto} alt="card background" className="card-img" />
-            <img src={Tony} alt="profile image" className="profile-img" />
-            <h1>Tony Regalado</h1>
+            <img src={Aloysious} alt="profile image" className="profile-img" />
+            <h1>Aloysious X</h1>
             <p className="job-title">Software Developer</p>
-            <p className="about">Hello my name is Tony Reaglado.</p>
-            <a href="#" className="btn">Contact</a>
+            <p className="about">Bio Here: </p>
+            {/* <a href="#" className="btn">Contact</a> */}
             <ul className="social-media">
-              <li><a href="#"><i className="fab fa-linkedin-in"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/a-todd-charliemike/" target="blank"><i className="fab fa-linkedin-in"></i></a></li>
+              <li><a href="https://github.com/AL0YSI0US" target="blank"><i className="fab fa-github-square"></i></a></li>
+              <li><a href="#"><i className="fab fa-google-plus-square"></i></a></li>
+              <li><a href="#"><i className="fab fa-twitter-square"></i></a></li>
+            </ul>
+          </div>
+          <div className="card">
+            <img src={BGPhoto} alt="card background" className="card-img" />
+            <img src={Matt} alt="profile image" className="profile-img" />
+            <h1>Matt Santorsola</h1>
+            <p className="job-title">Software Developer</p>
+            <p className="about">Bio Here: </p>
+            {/* <a href="#" className="btn">Contact</a> */}
+            <ul className="social-media">
+              <li><a href="https://www.linkedin.com/in/matthew-santorsola/" target="blank"><i className="fab fa-linkedin-in"></i></a></li>
               <li><a href="#"><i className="fab fa-github-square"></i></a></li>
               <li><a href="#"><i className="fab fa-google-plus-square"></i></a></li>
               <li><a href="#"><i className="fab fa-twitter-square"></i></a></li>
@@ -34,16 +50,16 @@ function AboutUs() {
           </div>
           <div className="card">
             <img src={BGPhoto} alt="card background" className="card-img" />
-            <img src={Tony} alt="profile image" className="profile-img" />
-            <h1>Tony Regalado</h1>
+            <img src={Marie} alt="profile image" className="profile-img" />
+            <h1>Marie Marcos</h1>
             <p className="job-title">Software Developer</p>
-            <p className="about">Hello my name is Tony Reaglado.</p>
-            <a href="#" className="btn">Contact</a>
+            <p className="about">Bio Here: </p>
+            {/* <a href="#" className="btn">Contact</a> */}
             <ul className="social-media">
-              <li><a href="#"><i className="fab fa-linkedin-in"></i></a></li>
-              <li><a href="#"><i className="fab fa-github-square"></i></a></li>
-              <li><a href="#"><i className="fab fa-google-plus-square"></i></a></li>
-              <li><a href="#"><i className="fab fa-twitter-square"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/marie-marcos/" target="blank"><i className="fab fa-linkedin-in"></i></a></li>
+              <li><a href="https://github.com/Mmarcos01" target="blank"><i className="fab fa-github-square" target="blank"></i></a></li>
+              <li><a href="#"><i className="fab fa-google-plus-square" target="blank"></i></a></li>
+              <li><a href="#"><i className="fab fa-twitter-square" target="blank"></i></a></li>
             </ul>
           </div>
           <div className="card">
@@ -51,25 +67,15 @@ function AboutUs() {
             <img src={Tony} alt="profile image" className="profile-img" />
             <h1>Tony Regalado</h1>
             <p className="job-title">Software Developer</p>
-            <p className="about">Hello my name is Tony Reaglado.</p>
-            <a href="#" className="btn">Contact</a>
+            <p className="about">I'm a US Coast Guard Veteran with a background in the Hospitality & Food Service Industry. Currently living
+          in Seattle and attending Codefellows full-time. I'd say that I'm an open-minded, honest, dedicated and
+          hardworking individual. I have a passion for tech, building race cars, gaming, learning and writing code.
+          I'm excited use my problem solving and critical thinking skills to build apps that helps improves the lives of
+          people around the world.</p>
+            {/* <a href="#" className="btn">Contact</a> */}
             <ul className="social-media">
-              <li><a href="#"><i className="fab fa-linkedin-in"></i></a></li>
-              <li><a href="#"><i className="fab fa-github-square"></i></a></li>
-              <li><a href="#"><i className="fab fa-google-plus-square"></i></a></li>
-              <li><a href="#"><i className="fab fa-twitter-square"></i></a></li>
-            </ul>
-          </div>
-          <div className="card">
-            <img src={BGPhoto} alt="card background" className="card-img" />
-            <img src={Tony} alt="profile image" className="profile-img" />
-            <h1>Tony Regalado</h1>
-            <p className="job-title">Software Developer</p>
-            <p className="about">Hello my name is Tony Reaglado.</p>
-            <a href="#" className="btn">Contact</a>
-            <ul className="social-media">
-              <li><a href="#"><i className="fab fa-linkedin-in"></i></a></li>
-              <li><a href="#"><i className="fab fa-github-square"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/edward-regalado/" target="blank"><i className="fab fa-linkedin-in"></i></a></li>
+              <li><a href="https://github.com/Edward-Regalado" target="blank"><i className="fab fa-github-square"></i></a></li>
               <li><a href="#"><i className="fab fa-google-plus-square"></i></a></li>
               <li><a href="#"><i className="fab fa-twitter-square"></i></a></li>
             </ul>

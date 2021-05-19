@@ -1,5 +1,5 @@
 .about-container {
-  padding: 5rem 0;
+  padding: 10rem 0;
   background-color: #fff;
 }
 
@@ -10,6 +10,8 @@ a {
 
 .heading {
   text-transform: uppercase;
+  font-family: 'Megrim'; 
+  font-weight: 800;
   font-size: 3.5rem;
   letter-spacing: 3px;
   margin-right: -3px;
@@ -61,7 +63,7 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 4rem 0;
+  margin: 2rem 0;
   box-shadow: .5rem .5rem 3rem rgba(0, 0, 0, 0.2);
 }
 
@@ -70,25 +72,26 @@ a {
   height: 26rem;
   object-fit: cover;
   clip-path: polygon(0 0, 100% 0, 100% 58%, 0 100%);
-  /* clip-path: polygon(3% 0, 100% 0, 100% 0, 0% 100%); */
-
 }
 
-.profile-img {
-  width: 15rem;
-  height: 15rem;
+.card .profile-img {
+  width: 12rem;
+  height: 12rem;
   object-fit: cover;
   border-radius: 50%;
-  margin-top: -10rem;
-  /* margin-bottom: 2rem; */
+  margin-top: -12rem;
+  margin-bottom: 1.5rem;
   z-index: 999;
-  border: .2rem solid #ebeef8;
+  /* border: .2rem solid #ebeef8; */
+  border: .2rem solid black;
 }
 
 .card h1 {
+  font-family: 'Megrim'; 
+  font-weight: 900;
   font-size: 2.5rem;
   color: #333;
-  margin: 1.5rem 0;
+  /* margin: 1.5rem 0; */
 }
 
 .job-title {
@@ -98,11 +101,17 @@ a {
 }
 
 .about {
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin: 1.5rem 0;
   font-style: italic;
   text-align: center;
   color: #333;
+  width: 90%;
+  padding: 20px;
+}
+
+.about p {
+  margin: 1rem;
 }
 
 .card .btn {
@@ -146,7 +155,7 @@ a {
   transition: color .5s;
 }
 
-.fa-facebook-square {
+.fa-twitter-square {
   color: #3b5999;
 }
 
