@@ -27,4 +27,10 @@
   color: white;
   font-family: 'Megrim'; 
   text-align: center;
-}
+  text-shadow: 4px 3px 2px rgba(173, 172, 172, 0.979);
+} 
+
+
+/* .docTitle {
+  margin-top: 30px;
+} */

@@ -47,7 +47,7 @@ REACT_APP_AUTH0_CLIENT_ID=fBPJNSLDhFeU7MwRApLs1F64LKG2z3y3
 5. install the following dependencies :
 
 ````javascript
-npm install a
+npm install i
 ````
 
 5. `npm start` to run
@@ -62,7 +62,7 @@ npm install a
 
 **Libraries :**  React / Bootstrap | Axios | NASA | Auth0 | dotenv | Font Awesome
 
-**Tools :** Trello | Github | VS Code / Netlify
+**Tools :** Trello | Github | VS Code | Netlify | Heroku
 
 ## Change Log
 

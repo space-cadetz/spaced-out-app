@@ -7,8 +7,8 @@ import '../styles/NavBar.css';
 
 class Navigation extends React.Component {
   render() {
+    const { isAuthenticated } = this.props.auth0;
     return (
-
       <Navbar className='navbar' collapseOnSelect expand="lg" bg="dark" variant="dark">
         <Navbar.Brand className='logo' href='/'>SpaceOut</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -27,7 +27,7 @@ class Navigation extends React.Component {
           </Nav>
           <Nav className="logout-btn">
 
-            <LogoutButton />
+           {isAuthenticated ? <LogoutButton /> : ''}
 
           </Nav>
         </Navbar.Collapse>

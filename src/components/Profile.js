@@ -27,7 +27,7 @@ const Profile = () => {
           <h2 className="text-center">{user.name}</h2>
           <p className="text-center">{user.email}</p>
           <div className="text-center"></div>
-          <div className="quote">🛸There are no passengers on spaceship earth...🌎 </div><br />
+          <div className="quote"><span role="img" aria-label="earth">🛸There are no passengers on spaceship earth...🌎</span></div><br />
         </Container>
         <div>
           <FavImages />
