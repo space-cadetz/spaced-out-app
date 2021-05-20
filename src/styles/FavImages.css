@@ -3,6 +3,11 @@
   height: 300px;
 }
 
+.card {
+  background-color: rgb(255, 255, 255, .02);
+  width: 21rem;
+}
+
 p, h3 {
   color: white;
 }

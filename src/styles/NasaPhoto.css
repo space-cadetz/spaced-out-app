@@ -1,5 +1,6 @@
-.jumbo {
-  width: 50vw;
+.random-btn {
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 .apod-img {
   border: 2px solid red;
@@ -16,6 +17,7 @@
 
 .nasa-container img {
   width: 40vw;
+  height: 40vw;
   border-radius: 10px;
   box-shadow: 0px 0px 5px 6px rgba(239,24,157,0.75);
   -webkit-box-shadow: 0px 0px 5px 6px rgba(239, 24, 157, 0.658);
@@ -45,10 +47,10 @@
 }
 
 /* .photo-explaination {} */
-
 /* All the words yo! */
-#photo-explaination {
+#photo-explanation {
   font-family: 'Roboto Mono', monospace;
   font-size: 30px;
   padding: 50px;
+  text-align: justify;
 }

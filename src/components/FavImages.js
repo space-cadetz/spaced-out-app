@@ -52,7 +52,8 @@ class FavImages extends React.Component {
 
   render() {
     let allImages = this.state.images.map((image) => (
-      <CardDeck key={image._id}>
+      <CardDeck>
+        <Card  className="card">
         <Card.Body>
           <img className="fav-img" src={image.url} alt={image.title} />
           {/* <Card.Title>{image.title}</Card.Title> */}
@@ -60,6 +61,7 @@ class FavImages extends React.Component {
           <p>{image.date}</p>
           <Button  onClick={() => this.handleDelete(image._id)}>Delete</Button>
         </Card.Body>
+        </Card>
       </CardDeck>
     ));
 
