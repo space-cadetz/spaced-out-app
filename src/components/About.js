@@ -40,7 +40,7 @@ function AboutUs() {
             <img src={Matt} alt="profile image" className="profile-img" />
             <h1>Matt Santorsola</h1>
             <p className="job-title">Software Developer</p>
-            <p className="about">Bio Here: </p>
+            <p className="about">My professional journey began as an instructor pilot in the US Air Force. Over the years I’ve come to realize that my favorite decisions can be traced  to a relentless curiosity to understand and deconstruct problems. This trait has allowed me success in delivering strategic initiatives, and, building high-performing teams across diverse settings, including the US Air Force, Financial Services, E-commerce, and has brought me to CodeFellows. I’m a graduate of the United States Air Force Academy and hold an MBA from The Wharton School, University of Pennsylvania.</p>
             {/* <a href="#" className="btn">Contact</a> */}
             <ul className="social-media">
               <li><a href="https://www.linkedin.com/in/matthew-santorsola/" target="blank"><i className="fab fa-linkedin-in"></i></a></li>
