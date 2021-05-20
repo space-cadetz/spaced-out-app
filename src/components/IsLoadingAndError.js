@@ -18,8 +18,8 @@ class IsLoadingAndError extends React.Component {
               role="status"
               aria-hidden="true"
             />
-        Loading...
-      </Button>
+            Loading...
+          </Button>
         </>
         :
         this.props.auth0.error ?

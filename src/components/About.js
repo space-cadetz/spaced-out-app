@@ -24,8 +24,9 @@ function AboutUs() {
             <img src={BGPhoto} alt="card background" className="card-img" />
             <img src={Aloysious} alt="profile image" className="profile-img" />
             <h1>Aloysious X</h1>
+            <p>&lt;they&gt;💻&lt;/them&gt;</p>
             <p className="job-title">Software Developer</p>
-            <p className="about">Bio Here: </p>
+            <p className="about">I'm an Army Veteran, a stay-at-home parent, and a Cloud Native Web Developer pursuing Python certification @Codefellows. I currently live on Occupied Duwamish Land and throughout the pandemic have fallen in love with <a href="https://sourcecred.io/docs/"id="sourcecred" target="_blank">Source Cred</a>, an open source algorithm and my current passion project. I have a passion for Neurodiversity Advocacy and plan to leverage the skills I'm developing now to create a more inclusive future for all...both in and out of the tech industry. </p>
             {/* <a href="#" className="btn">Contact</a> */}
             <ul className="social-media">
               <li><a href="https://www.linkedin.com/in/a-todd-charliemike/" target="blank"><i className="fab fa-linkedin-in"></i></a></li>

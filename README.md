@@ -47,7 +47,7 @@ REACT_APP_AUTH0_CLIENT_ID=fBPJNSLDhFeU7MwRApLs1F64LKG2z3y3
 5. install the following dependencies :
 
 ````javascript
-npm install Auth0 axios dotenv react-bootstrap bootstrap
+npm install a
 ````
 
 5. `npm start` to run
@@ -70,6 +70,10 @@ npm install Auth0 axios dotenv react-bootstrap bootstrap
 01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. 
 -->
 
+05-18-2021 6:53pm ✔️ Successfully Deployed from Netlify · v3 · main@449e332
+
+05-16-2021 7:17pm ❌ Failed to Deploy from Netlify · v17 · main@474ecbe
+
 05-15-2021 3:20pm ✔️ Successfully Deployed from Netlify · v3 · main@654e2fa
 
 05-15-2021 11:03am ✔️ Successfully Deployed from Netlify · v2 · main@a001e46
@@ -91,10 +95,12 @@ npm install Auth0 axios dotenv react-bootstrap bootstrap
 + [React Website Tutorial](https://www.youtube.com/watch?v=I2UBjN5ER4s) - { `Brian Design - Youtube` }
 + [clippy](https://bennettfeely.com/clippy/) - photo editing tool
 + [Font Awesome](https://fontawesome.com/) - vector icons and social logos
++ [Make a Stellar React + NASA API App](https://www.youtube.com/watch?v=H1nENYv-r_w) - *Youtube*
++ [Responsive iframes](https://www.youtube.com/watch?v=X4t0JxiBeO0) - Imbedding Youtube
 
 <h2 align="center">❤️ Credit and Collaborations 👥</h2>
 
-+ Props to { `Brian Design - *Youtuber*` }
++ Props to { `Brian Design - Youtuber` } for the stellar resources!
 + + [Brian's react website resources](https://github.com/briancodex/react-website-v1)
 + Props to { `TA Chris` } for helping us with our Auth0 and Netlify `.env` variables.
 + Props to { `TA Joe` } for assisting us with configuring our routes on Netlify.
@@ -102,7 +108,7 @@ npm install Auth0 axios dotenv react-bootstrap bootstrap
 + + [redirect-rules-for-all](https://www.netlify.com/blog/2019/01/16/redirect-rules-for-all-how-to-configure-redirects-for-your-static-site/) -*specific to our situation*
 
 > Without an explicit redirect, the Netlify bots assume you’re requesting a page separate
-> from /index.html and since that page doesn’t actually exist, it returns an error.
+> from /index.html and since that page doesn't actually exist, it returns an error.
 
 To enable clean URLs in your Netlify deployed SPAs, add the following rule to your `_redirects` file:
 
