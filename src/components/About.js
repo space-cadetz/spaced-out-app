@@ -53,7 +53,7 @@ function AboutUs() {
             <img src={Marie} alt="profile image" className="profile-img" />
             <h1>Marie Marcos</h1>
             <p className="job-title">Software Developer</p>
-            <p className="about">Bio Here: </p>
+            <p className="about">I'm a Navy Veteran and current Codefellows student from Washington State. I developed an interest in Software Development from my love of making things- if I can think it up and make it real, it just feels awesome- especially when someone else can enjoy it too. Coding has proven to be a great outlet for idea sharing and collaboration. I'm looking forward to my future in tech and using all I've learned to develop ideas and create solutions.</p>
             {/* <a href="#" className="btn">Contact</a> */}
             <ul className="social-media">
               <li><a href="https://www.linkedin.com/in/marie-marcos/" target="blank"><i className="fab fa-linkedin-in"></i></a></li>
