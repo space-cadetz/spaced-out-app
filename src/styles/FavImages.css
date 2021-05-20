@@ -3,6 +3,14 @@
   height: 300px;
 }
 
+.card-container{
+  margin: auto;
+  max-width: 65vw;
+}
+.card-deck{
+  display: inline-block;
+}
+
 .card {
   background-color: rgb(255, 255, 255, .02);
   width: 21rem;

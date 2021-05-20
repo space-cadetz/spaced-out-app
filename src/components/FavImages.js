@@ -67,8 +67,8 @@ class FavImages extends React.Component {
 
     return (
       <>
-        <Container>
-          <CardDeck>{allImages}</CardDeck>
+        <Container className="card-container">
+          <CardDeck className="card-deck">{allImages}</CardDeck>
         </Container>
       </>
     );
