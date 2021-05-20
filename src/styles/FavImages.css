@@ -3,11 +3,37 @@
   height: 300px;
 }
 
+.card-container{
+  margin: auto;
+  max-width: 65vw;
+}
+.card-deck{
+  display: inline-block;
+}
+
 .card {
   background-color: rgb(255, 255, 255, .02);
   width: 21rem;
+  height: 35rem;
 }
 
-p, h3 {
+.image-title {
+margin-top: 15px;
+}
+
+h3 {
   color: white;
+  text-align: center;
+}
+
+.date {
+  color: white;
+  text-align: center;
+  padding-top: 20px;;
+}
+
+.delete-btn {
+margin-left: 25%;
+position: absolute;
+bottom: 0;
 }
