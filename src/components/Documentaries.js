@@ -7,7 +7,9 @@ import '../styles/Documentary.css';
 function Documentaries() {
   return (
     <div className="main-container">
-      <h1>Space Playlist</h1>
+      <div className="docTitle">
+        <h1>Space Documentaries</h1>
+      </div>
       <div className="video-container">
         <iframe
           width="560"

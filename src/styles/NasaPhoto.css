@@ -1,56 +1,169 @@
-.random-btn {
-  margin-top: 20px;
-  margin-bottom: 30px;
-}
-.apod-img {
-  border: 2px solid red;
-}
 .nasa-container {
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 20px;
+  width: auto;
+  height: 100vh;
   background-color: rgb(8, 8, 8);
-  color: white;
+  /* margin-top: -6rem; */
 }
 
-.nasa-container img {
-  width: 40vw;
-  height: 40vw;
+.nasa-header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 40px;
+}
+
+.nasa-header-container h1 {
+  font-family: "Megrim";
+  font-weight: 800;
+  text-shadow: 4px 3px 2px rgba(128, 125, 125, 0.94);
+}
+
+.nasa-header-container::after {
+    content: "";
+    width: 10rem;
+    height: .8rem;
+    background: #03001e;
+    background: -webkit-linear-gradient(to right, #fdeff9, #ec38bc, #7303c0, #03001e);
+    background: linear-gradient(to right, #ffe8f9, #ec38bc, #7303c0, #03001e); 
+    position: absolute;
+    bottom: -2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2rem;
+}
+
+.nasa-img-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 90vw;
+  margin-top: 20px;
+}
+
+.nasaImgOfTheDay {
+  width: 600px;
+  height: 600px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 100px;
+  margin-top: 70px;
   border-radius: 10px;
-  box-shadow: 0px 0px 5px 6px rgba(239,24,157,0.75);
-  -webkit-box-shadow: 0px 0px 5px 6px rgba(239, 24, 157, 0.658);
+  box-shadow: 0px 0px 5px 6px rgba(239, 24, 157, 0.5);
+  -webkit-box-shadow: 0px 0px 15px 5px rgba(239, 24, 157, 0.527);
   -moz-box-shadow: 0px 0px 5px 6px rgba(239,24,157,0.75);
 }
 
-/* .photo-title {} */
+.nasa-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 1000px;
+  /* overflow: scroll; */
+  /* background-color: rebeccapurple; */
+  float: right;
+  margin-top: 40px;
+}
 
-/*  Consider this the H1 */
+.nasa-text-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: auto;
+  margin-top: -5rem;
+}
+
+
+/* img {
+  width: 50%
+} */
+
 #photo-title {
   color: rgb(255, 255, 255);
-  /* font-family: 'Megrim'; */
+  font-family: 'Megrim';
   font-family: 'Roboto Mono', monospace;
-  font-size: 52px;
+  font-size: 1.6rem;
   font-weight: bold;
-  padding: 40px;
+  text-align: center;
+  margin-top: -3rem;
   text-shadow: 4px 3px 2px rgba(128, 125, 125, 0.94);
 }
 
-/* .photo-date {} */
 #photo-date {
   font-family: 'Roboto Mono', monospace;
-  font-size: 36px;
+  font-size: 1.1rem;
   font-weight: bold;
-  margin-top: 30px;
+  margin-top: 20px;
   text-shadow: 4px 3px 2px rgba(128, 125, 125, 0.94);
 }
 
-/* .photo-explaination {} */
-/* All the words yo! */
 #photo-explanation {
-  font-family: 'Roboto Mono', monospace;
-  font-size: 30px;
-  padding: 50px;
+font-family: 'Roboto Mono', monospace;
+  font-size: 1.03rem;
+  font-weight: 500;
   text-align: justify;
+ }
+
+.btnBox {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  margin-top: -70px;
 }
+
+.random-btn {
+  color: black;
+  background-color: white;
+  width: 120px;
+  height: 50px;
+  margin: 20px;
+  border: none;
+  border-radius: 4px;
+  transition: ease-out 0.5s;
+  font-size: 1rem;
+  font-weight: 700;
+  outline: none;
+  letter-spacing: .5px;
+  position: relative;
+  z-index: 1;
+}
+
+.random-btn:hover {
+  color: white;
+  background-color: rgb(0, 76, 255);
+  cursor: pointer;
+}
+
+.save-btn {
+    color: black;
+    width: 150px;
+    height: 50px;
+    margin: 25px;
+    border: none;
+    border-radius: 4px;
+    transition: ease-out 0.4s;
+    font-size: 1rem;
+    font-weight: 700;
+    outline: none;
+    letter-spacing: .3px;
+    position: relative;
+    z-index: 1;
+  }
+  
+.save-btn:hover {
+    color: white;
+    text-shadow: black 5px 4px 5px 3px;
+    background-color: rgb(45, 194, 0);
+    cursor: pointer;
+}
+

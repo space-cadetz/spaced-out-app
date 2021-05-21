@@ -1,32 +1,66 @@
-.profile-background {
- background-color: rgb(20, 20, 20);
-}
-
-.profile-container {
-  padding-top: 40px;
-  background-color: rgba(20, 20, 20, 0.877);
-}
-
-.profile-img{
-  height: 100px;
-  width: 100px;
-  margin-bottom: 50px;
+.profileBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: right;
+  width: auto;
+  height: 70px;
   margin-top: 60px;
 }
 
+.userInfoBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+  background-color: rgba(245, 245, 245, 0.034);
+  border-radius: 15px;
+}
+
+.userInfo {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align:center;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 1px;
+  padding: 8px;
+}
+
+.profileImg {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  border: solid whitesmoke;
+  z-index: 999;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.profileImg:hover {
+  transform: scale(1.10);
+  box-shadow: 0px 0px 15px 0px;
+}
+
 /* N A M E  */
-h2.text-center {
+.text-center {
  color: aliceblue;
 }
 /* E M A I L */
-p.text-center {
+.text-center {
   color: aliceblue;
-  font-size: 20px;
+  font-size: 12px;
+  text-transform: uppercase;
 }
 /* 🛸There are no passengers on spaceship earth...🌎 */
 .quote {
   color: aliceblue;
+  font-family: 'Roboto Mono', monospace;
+  text-shadow: 4px 3px 2px rgba(173, 172, 172, 0.329);
   font-size: 26px;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }

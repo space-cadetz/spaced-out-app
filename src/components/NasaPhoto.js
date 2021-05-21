@@ -2,7 +2,7 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useAuth0 } from '@auth0/auth0-react';
-import { Button } from 'react-bootstrap';
+// import { Button } from 'react-bootstrap';
 // import { Card, Image } from 'react-bootstrap';
 
 import '../styles/NasaPhoto.css';
@@ -83,12 +83,25 @@ export default function NasaPhoto() {
 
   return (
     <div className="nasa-container">
-      <Button className="random-btn" variant="secondary" onClick={fetchRandom}>Warp Speed!</Button>
-      <img src={photoData.url} alt={photoData.title} />
-      <h1 name="title" id="photo-title">{photoData.title}</h1>
-      <p name="date" id="photo-date">{photoData.date}</p>
-      <p name="explanation" id="photo-explanation">{photoData.explanation}</p>
-      <Button variant="success" onClick={handleClick}>Save to Favorites</Button>
+      <div className="nasa-header-container">
+        <h1>Image of the Day</h1>
+      </div>
+      <div className="nasa-img-container">
+        <img className="nasaImgOfTheDay" src={photoData.url} alt={photoData.title} />
+        <div className="nasa-text-container">
+          <h1 name="title" id="photo-title">{photoData.title}</h1>
+          <div className="nasa-text-data">
+            <p name="date" id="photo-date">{photoData.date}</p>
+            <p name="explanation" id="photo-explanation">{photoData.explanation}</p>
+          </div>
+
+          <div className="btnBox">
+            <button className="random-btn" variant="secondary" onClick={fetchRandom}>Warp Speed!</button>
+            <button className="save-btn" onClick={handleClick}>Save to Favorites</button>
+          </div>
+
+        </div>
+      </div>
 
     </div>
   );

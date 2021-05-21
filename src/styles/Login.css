@@ -1,0 +1,47 @@
+.loginContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../images/blackhole.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cardBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.048);
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-bottom: 65px;
+}
+
+.cardBody:hover {
+    transform: scale(1.10);
+    box-shadow: 0px 0px 15px 0px;
+}
+
+.cardTitle {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Megrim';
+    text-shadow: 4px 3px 2px rgba(128, 125, 125, 0.94);
+}
+
+.cardLoginText {
+    margin-bottom: 10px;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+    
+}

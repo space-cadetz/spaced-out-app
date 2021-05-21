@@ -1,39 +1,123 @@
-.fav-img {
-  width: 300px;
-  height: 300px;
+.galleryContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.card-container{
-  margin: auto;
-  max-width: 65vw;
-}
-.card-deck{
-  display: inline-block;
+.userGalleryHeaderBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.card {
-  background-color: rgb(255, 255, 255, .02);
-  width: 21rem;
-  height: 35rem;
-}
-
-.image-title {
-margin-top: 15px;
-}
-
-h3 {
+.userGalleryHeader {
+  position: relative;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  /* font-style: italic; */
+  /* font-family: 'Roboto Mono', monospace; */
+  font-family: "Megrim";
+  text-shadow: 4px 3px 2px rgba(128, 125, 125, 0.94);
+  font-weight: 800;
+  margin-top: 2rem;
+}
+
+.userGalleryHeader::after {
+  content: "";
+  width: 10rem;
+  height: .8rem;
+  background: -webkit-linear-gradient(to right, #fdeff9, #ec38bc, #7303c0, #03001e); 
+  background: linear-gradient(to right, #ffe8f9, #ec38bc, #7303c0, #03001e);
+  position: absolute;
+  bottom: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2rem;
+}
+
+.favCard {
+  /* background-color: rgb(228, 228, 228); */
+  width: auto;
+  box-shadow: 2px 2px 10px 2px #ffffff5e;
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 3rem;
+}
+
+.favCardBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.favImg {
+  border-radius: 10px;
+  width: 400px;
+  height: 400px;
+  margin: 20px;
+}
+
+.favImg:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 0px 15px 0px;
+}
+
+.cardContainer{
+  margin: auto;
+  max-width: 77vw;
+}
+.cardDeck{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.cardText {
+  width: 400px;
+}
+
+.imageTitle {
+  margin-top: 15px;
+  color: rgba(255, 255, 255, 0.692);
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1rem;
+  font-weight: bold;
   text-align: center;
 }
 
 .date {
-  color: white;
+  color: rgba(255, 255, 255, 0.692);
   text-align: center;
-  padding-top: 20px;;
+  font-family: 'Roboto Mono', monospace;
+  padding-top: 10;
 }
 
-.delete-btn {
-margin-left: 25%;
-position: absolute;
-bottom: 0;
+.btn-1 {
+  color: black;
+  width: 100px;
+  height: 40px;
+  margin: 20px;
+  /* background-color: rgb(255, 0, 255); */
+  border: none;
+  border-radius: 4px;
+  transition: ease-out 0.4s;
+  font-size: 1.2rem;
+  font-weight: 500;
+  outline: none;
+  letter-spacing: .5px;
+  /* text-transform: uppercase; */
+  position: relative;
+  z-index: 1;
+}
+
+.btn-1:hover {
+  background-color: rgb(230, 0, 0);
+  cursor: pointer;
 }

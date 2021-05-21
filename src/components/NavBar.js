@@ -7,8 +7,8 @@ import '../styles/NavBar.css';
 
 class Navigation extends React.Component {
   render() {
+    const { isAuthenticated } = this.props.auth0;
     return (
-
       <Navbar className='navbar' collapseOnSelect expand="lg" bg="dark" variant="dark">
         <Navbar.Brand className='logo' href='/'>SpaceOut</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -19,7 +19,7 @@ class Navigation extends React.Component {
             <NavDropdown title="Explore" id="collasible-nav-dropdown">
               <NavDropdown.Item href='/picture'>Nasa Photo</NavDropdown.Item>
               <NavDropdown.Item href='/documentaries'>Documentaries</NavDropdown.Item>
-              <NavDropdown.Item href='/search'>Search</NavDropdown.Item>
+              {/* <NavDropdown.Item href='/search'>Search</NavDropdown.Item> */}
               <NavDropdown.Divider />
               <NavDropdown.Item href='/profile'>Profile</NavDropdown.Item>
               <NavDropdown.Item href='/about'>About Us</NavDropdown.Item>
@@ -27,7 +27,7 @@ class Navigation extends React.Component {
           </Nav>
           <Nav className="logout-btn">
 
-            <LogoutButton />
+           {isAuthenticated ? <LogoutButton /> : ''}
 
           </Nav>
         </Navbar.Collapse>
