@@ -39,12 +39,9 @@
     text-shadow: 4px 3px 2px rgba(128, 125, 125, 0.94);
 }
 
-.cardText {
+.cardLoginText {
     margin-bottom: 10px;
     font-family: 'Roboto Mono', monospace;
+    color: white;
     
-}
-
-.loginButton {
-    /* margin-top: 20px; */
 }

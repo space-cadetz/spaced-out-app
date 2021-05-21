@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import { withAuth0 } from '@auth0/auth0-react';
-import { CardDeck, Card, Button, Container } from 'react-bootstrap';
+import { CardDeck, Card } from 'react-bootstrap';
 
 import '../styles/FavImages.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -52,27 +52,33 @@ class FavImages extends React.Component {
 
   render() {
     let allImages = this.state.images.map((image) => (
-      <CardDeck>
-        <Card  className="card">
-        <Card.Body>
-          <img className="fav-img" src={image.url} alt={image.title} />
-          {/* <Card.Title>{image.title}</Card.Title> */}
-          <h3 className="image-title">{image.title}</h3>
-          <p className="date">{image.date}</p>
-          <div className="delete-btn">
-          <Button onClick={() => this.handleDelete(image._id)}>Delete</Button>
+      <div className="galleryContainer">
+          <div className="favCard">
+            <div className="favCardBody">
+              <div className="cardText">
+                <p className="imageTitle">{image.title}</p>
+                <p className="date">{image.date}</p>
+              </div>
+              <img className="favImg" src={image.url} alt={image.title} />
+              {/* <Card.Title>{image.title}</Card.Title> */}
+
+              {/* <div className="buttonContainer"> */}
+                <button className="btn-1" onClick={() => this.handleDelete(image._id)}>Delete</button>
+              {/* </div> */}
+            </div>
           </div>
-        </Card.Body>
-        </Card>
-      </CardDeck>
+      </div>
     ));
 
     return (
-      <>
-        <Container className="card-container">
-          <CardDeck className="card-deck">{allImages}</CardDeck>
-        </Container>
-      </>
+      // <div className="favContainer">
+      <div className="cardContainer">
+        <div className="userGalleryHeaderBox">
+        <h1 className="userGalleryHeader">Gallery</h1>
+        </div>
+        <CardDeck className="cardDeck">{allImages}</CardDeck>
+      </div>
+      // </div>
     );
   }
 }

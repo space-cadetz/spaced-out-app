@@ -1,6 +1,7 @@
 .about-container {
   padding: 10rem 0;
   background-color: #fff;
+  margin-top: -6rem;
 }
 
 a {
@@ -41,7 +42,10 @@ a {
   content: "";
   width: 10rem;
   height: .8rem;
-  background-color: #45e19f;
+  background: #03001e;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #fdeff9, #ec38bc, #7303c0, #03001e);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ffe8f9, #ec38bc, #7303c0, #03001e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   position: absolute;
   bottom: -2rem;
   left: 50%;
@@ -167,7 +171,9 @@ a {
 }
 
 .fa-twitter-square:hover {
-  color: #45e19f;
+  /* color: #45e19f; */
+  color: #b045e1;
+
 }
 
 .fa-linkedin-in {
@@ -175,7 +181,7 @@ a {
 }
 
 .fa-linkedin-in:hover {
-  color: #45e19f;
+  color: #b045e1;
 }
 
 .fa-github-square {
@@ -183,7 +189,9 @@ a {
 }
 
 .fa-github-square:hover {
-  color: #45e19f;
+  /* color: #45e19f; */
+  color: #b045e1;
+
 }
 
 .fa-google-plus-square {
@@ -191,7 +199,9 @@ a {
 }
 
 .fa-google-plus-square:hover {
-  color: #45e19f;
+  /* color: #45e19f; */
+  color: #b045e1;
+
 }
 
 @media screen and (min-width: 700px) {

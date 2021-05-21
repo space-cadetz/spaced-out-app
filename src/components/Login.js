@@ -9,10 +9,10 @@ class Login extends React.Component {
   render() {
     return (
       <div className="loginContainer">
-        <div className="cardContainer">
+        <div>
           <div className="cardBody">
             <div className="cardTitle">Welcome</div>
-            <div className="cardText">
+            <div className="cardLoginText">
               <p>Click Below to Log In</p>
             </div>
             <div className="loginButton">

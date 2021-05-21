@@ -9,21 +9,28 @@ html {
   align-items: center;
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
   object-fit: contain;
-}
-
-img {
-  width: 100vw;
   height: 100vh;
+  background-image: url(../images/planet.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.landing-container > h1 {
+.landing-container-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing-container-text > h1 {
   color: rgb(255, 255, 255);
   font-size: 4vw;
-  margin-top: -550px;
+  margin-top: 33rem;
   font-family: 'PT Sans', sans-serif;
 }
 
-.landing-container > p {
+.landing-container-text > p {
   margin-top: 10px;
   color: rgb(255, 255, 255);
   font-size: 1.25vw;
