@@ -1,8 +1,8 @@
 import React from 'react';
 // import '../App.css';
 // import { Button } from './Button';
-import { Image } from 'react-bootstrap';
-import Photo from '../images/planet.jpg';
+// import { Image } from 'react-bootstrap';
+// import Photo from '../images/planet.jpg';
 import '../styles/Landing.css';
 
 function Landing() {

@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import { withAuth0 } from '@auth0/auth0-react';
-import { CardDeck, Card } from 'react-bootstrap';
+import { CardDeck } from 'react-bootstrap';
 
 import '../styles/FavImages.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
