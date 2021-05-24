@@ -10,6 +10,7 @@ import '../styles/NasaPhoto.css';
 const apiKey = process.env.REACT_APP_NASA_KEY;
 
 
+// woah a functional component? fun!
 export default function NasaPhoto() {
   const [photoData, setPhotoData] = useState(null);
 
@@ -52,6 +53,7 @@ export default function NasaPhoto() {
     return year + "-" + month.padStart(2, "0") + "-" + day.padStart(2, "0");
   }
 
+  // it would make more sense to move these 2 lines of code inside of the fetchRandom method
   let date = formatDate(randomDate('2015-01-01', '2020-05-18'));
   console.log(date)
 

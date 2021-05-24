@@ -60,25 +60,19 @@ class FavImages extends React.Component {
                 <p className="date">{image.date}</p>
               </div>
               <img className="favImg" src={image.url} alt={image.title} />
-              {/* <Card.Title>{image.title}</Card.Title> */}
-
-              {/* <div className="buttonContainer"> */}
-                <button className="btn-1" onClick={() => this.handleDelete(image._id)}>Delete</button>
-              {/* </div> */}
+              <button className="btn-1" onClick={() => this.handleDelete(image._id)}>Delete</button>
             </div>
           </div>
       </div>
     ));
 
     return (
-      // <div className="favContainer">
       <div className="cardContainer">
         <div className="userGalleryHeaderBox">
         <h1 className="userGalleryHeader">Gallery</h1>
         </div>
         <CardDeck className="cardDeck">{allImages}</CardDeck>
       </div>
-      // </div>
     );
   }
 }

@@ -6,8 +6,6 @@ import About from './components/About';
 import Search from './components/Search';
 import NasaPhoto from './components/NasaPhoto';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-// import Container from 'react-bootstrap/Container';
-// import './styles/App.css';
 
 // Components created by { auth0 } : https://auth0.com/docs/quickstart/spa/react
 // https://auth0.com/docs/quickstart/spa/react#configure-the-auth0provider-component
@@ -27,7 +25,6 @@ class App extends React.Component {
       <>
         <Router>
           <IsLoadingAndError>
-            {/* <Container className="App"> */}
             <Nav />
             <Switch>
               <Route exact path="/">
@@ -37,12 +34,11 @@ class App extends React.Component {
               <Route exact path="/about" component={About} />
               <Route exact path="/profile">
                 {isAuthenticated ? <Profile userInfo={user} /> : ''}
+                {/* I wish this showed something like "you're not logged in, please log in" instead of nothing */}
               </Route>
               <Route exact path="/documentaries" component={Docs} />
               <Route exact path="/search" component={Search} />
             </Switch>
-            {/* <NasaPhoto /> */}
-            {/* </Container> */}
           </IsLoadingAndError>
         </Router>
       </>
