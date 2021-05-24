@@ -1,7 +1,7 @@
 import React from 'react';
-// import { Card, Button, Container } from 'react-bootstrap';
 import BGPhoto from '../images/about-bg-image.jpg';
 import Tony from '../images/tony.jpg';
+// Tony's picture was also leftover in /public/images, so that was a bit odd and I don't think you're using that image file
 import Aloysious from '../images/aloysious.png';
 import Marie from '../images/marie.jpg';
 import Matt from '../images/matt.jpg';
@@ -11,6 +11,7 @@ function AboutUs() {
   return (
     <section>
       <div className="about-container">
+        {/* This didn't make you think "we should use a component here and render it 4 times for the 4 of us"? */}
         <div className="header-container">
 
           <h1 className="heading">

@@ -1,8 +1,5 @@
 import React from 'react';
-// import Container from 'react-bootstrap/Container';
-// import Image from 'react-bootstrap/Image';
 import '../styles/Documentary.css';
-// import Photo from '../images/wolf-space.jpg';
 
 function Documentaries() {
   return (

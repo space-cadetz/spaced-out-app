@@ -38,6 +38,7 @@
 3. Create a `.env` file at the root of your project.
 4. Copy and paste the following lines of code into the file you just created:
 
+<!-- putting your NASA key here feels wrong/insecure to me... that is a secret, and better would be to say "go get an API key from Nasa and include it in your .env as REACT_APP_NASA_KEY". but the Auth0 ones are not as secret/fine to have here. -->
 ```bash
 REACT_APP_NASA_KEY=RWodRHYYmEykujDzXa6e4O8pOXsn4sXthuHVU3hg
 REACT_APP_AUTH0_DOMAIN=aloysious.us.auth0.com
@@ -47,7 +48,7 @@ REACT_APP_AUTH0_CLIENT_ID=fBPJNSLDhFeU7MwRApLs1F64LKG2z3y3
 5. install the following dependencies :
 
 ````javascript
-npm install i
+npm install
 ````
 
 5. `npm start` to run
@@ -81,6 +82,8 @@ npm install i
 05-15-2021 10:04am ✔️ Successfully Deployed from Netlify · v1 · main@HEAD
 
 ## Resources
+
+<!-- thank you for all of this! -->
 
 + [react-bootstrap](https://react-bootstrap.github.io/layout/grid/)
 + [NASA API's](https://api.nasa.gov/)
